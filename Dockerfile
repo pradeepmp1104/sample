@@ -1,3 +1,3 @@
-FROM tomcat:8
+FROM httpd
 LABEL app=my-app
-COPY target/*.war /usr/local/tomcat/webapps/
+COPY index.html /var/www/html
