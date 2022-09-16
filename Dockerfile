@@ -1,3 +1,7 @@
 FROM tomcat
 # Take the war and copy to webapps of tomcat
-COPY target/*.war /usr/local/tomcat/webapps/cicd-2.0.war/
+COPY target/*.war /usr/local/tomcat/webapps/
+EXPOSE 8080
+CMD ["catalina.sh", "run"]
+
+
