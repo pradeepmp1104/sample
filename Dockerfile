@@ -1,3 +1,3 @@
-FROM httpd
-LABEL app=my-app
-COPY /index.html /var/www/html
+FROM tomcat:8
+# Take the war and copy to webapps of tomcat
+COPY target/*.war /usr/local/tomcat/webapps/
