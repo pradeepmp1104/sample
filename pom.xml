@@ -24,7 +24,7 @@
     <dependency>
     <groupId>org.codehaus.mojo</groupId>
     <artifactId>sonar-maven-plugin</artifactId>
-    <version>3.9.1.2184</version>
+    <version>4.7.0.2747</version>
     <type>pom</type>
 </dependency>
   </dependencies>
