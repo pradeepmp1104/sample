@@ -13,18 +13,7 @@
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    <properties>
-  <sonar.host.url>http://127.0.0.1:9000</sonar.host.url>
-  <sonar.login>sqp_804e296eb7c59b368d249fdf15556d675d62744d</sonar.login>
-  <sonar.language>java</sonar.language>
-  <sonar.scm.provider>git</sonar.scm.provider>
-</properties>
-<plugin>
-  <groupId>org.sonarsource.scanner.maven</groupId>
-  <artifactId>sonar-maven-plugin</artifactId>
-  <version>3.2</version>
-</plugin>
-    
+         
     <dependencies>
         <dependency>
             <groupId>javax</groupId>
@@ -81,6 +70,11 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                          <groupId>org.sonarsource.scanner.maven</groupId>
+                          <artifactId>sonar-maven-plugin</artifactId>
+                            <version>3.2</version>
+</plugin>
         </plugins>
     </build>
 
